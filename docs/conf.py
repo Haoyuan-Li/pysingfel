@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # pysingfel documentation build configuration file, created by
-# sphinx-quickstart on Tue Feb 20 23:03:44 2018.
+# sphinx-quickstart on Tue Feb 20 23:16:42 2018.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -30,7 +30,13 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
+    'sphinx.ext.imgmath',
+    'sphinx.ext.viewcode']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -39,15 +45,15 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.md'
+source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
 
 # General information about the project.
 project = u'pysingfel'
-copyright = u'2018, Haoyuan Li'
-author = u'Haoyuan Li'
+copyright = u'2018, Haoyuan Li, Zhaoyou Wang'
+author = u'Haoyuan Li, Zhaoyou Wang'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -74,7 +80,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = False
+todo_include_todos = True
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -142,7 +148,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'pysingfel.tex', u'pysingfel Documentation',
-     u'Haoyuan Li', 'manual'),
+     u'Haoyuan Li, Zhaoyou Wang', 'manual'),
 ]
 
 
@@ -169,3 +175,6 @@ texinfo_documents = [
 
 
 
+
+# Example configuration for intersphinx: refer to the Python standard library.
+intersphinx_mapping = {'https://docs.python.org/': None}
