@@ -40,8 +40,19 @@
             
   <div class="section" id="welcome-to-pysingfel-s-documentation">
 <h1>Welcome to pysingfel’s documentation!<a class="headerlink" href="#welcome-to-pysingfel-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>This is a python implementation of singfel.</p>
 <div class="toctree-wrapper compound">
 </div>
+</div>
+<div class="section" id="purpose-of-this-package">
+<h1>Purpose of this package<a class="headerlink" href="#purpose-of-this-package" title="Permalink to this headline">¶</a></h1>
+<p>psana is a relatively comprehensive package used in LCLS to fetch and analyze experiment data. It would be great if one can do simulation in a way compatible with psana. This package is create with this intention: to do single particle experiment simulation in the same style as we analyze the data.</p>
+<p>This package is written with python 2 and is only tested in python 2 environment. Currently there is no plan to create a python 3 version. Even though I have not tested this package in python 3, I’m pretty sure it’s not going to work.</p>
+<p>Another thing worth mentioning is that: Zhaoyou Wang has also implemented a pysingfel which has already been incoperated into simex platform for which this package is created. So a little history is required to clarify this situation.</p>
+</div>
+<div class="section" id="a-little-history">
+<h1>A little history<a class="headerlink" href="#a-little-history" title="Permalink to this headline">¶</a></h1>
+<p>There are mainly three people involved in this project, pysingfel, Chun Hong Yoon, Zhaoyou Wang and me. Chun Hong Yoon is the author of the C++ version, singfel. Before I took over this project, Zhaoyou Wang, as a rotating graduate student, translated singfel into python which is the original pysingfel. pysingfel is mostly compatible with singfel since it’s a translation. It works perfectly well (There are errors. But the error is exactly what singfel would have produced.). My version is not since new requirement appears: to be compatible with psana style. So when you try to use this version, you need to pay attention to this documentation.</p>
 </div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
