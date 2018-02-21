@@ -11,6 +11,9 @@ This is a python implementation of singfel.
    :maxdepth: 2
    :caption: Contents:
 
+   start
+   modules
+   example
 
 Purpose of this package
 =======================

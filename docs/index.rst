@@ -11,6 +11,9 @@ This is a python implementation of singfel.
    :maxdepth: 2
    :caption: Contents:
 
+   start
+   modules
+   example
 
 Purpose of this package
 =======================
@@ -25,7 +28,6 @@ A little history
 ================
 
 There are mainly three people involved in this project, pysingfel, Chun Hong Yoon, Zhaoyou Wang and me. Chun Hong Yoon is the author of the C++ version, singfel. Before I took over this project, Zhaoyou Wang, as a rotating graduate student, translated singfel into python which is the original pysingfel. pysingfel is mostly compatible with singfel since it's a translation. It works perfectly well (There are errors. But the error is exactly what singfel would have produced.). My version is not since new requirement appears: to be compatible with psana style. So when you try to use this version, you need to pay attention to this documentation.
-
 
 
 Indices and tables
