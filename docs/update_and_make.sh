@@ -16,4 +16,4 @@ cp ./example.txt ./example.rst
 cp ./start.txt ./start.rst
 
 ## compile
-make html
+sphinx-build -b html -D imgmath_latex="/usr/bin/latex" . _build/html
